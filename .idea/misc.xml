@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/font/nunito.xml" value="0.10648148148148148" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/fragment_movie_details.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/fragment_movies.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/fragment_person_details.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/fragment_tv_shows.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/list_item_cast.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/list_item_credit.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/list_item_image.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/list_item_movie.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/list_item_movie_grid.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/list_item_tv_show.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/list_item_tv_show_grid.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/layout/list_item_video.xml" value="0.1" />
+        <entry key="..\:/Workspace/MoviesAppkotlin/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
