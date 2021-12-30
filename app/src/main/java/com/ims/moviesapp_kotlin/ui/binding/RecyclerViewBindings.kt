@@ -61,3 +61,4 @@ fun RecyclerView.bindTvShowList(
     }
     (this.adapter as TvShowListAdapter).submitList(items)
 }
+

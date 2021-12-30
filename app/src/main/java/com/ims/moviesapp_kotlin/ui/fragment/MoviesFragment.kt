@@ -17,36 +17,26 @@ import com.ims.moviesapp_kotlin.util.extension.showSnackBar
 class MoviesFragment : BaseFragment(false) {
 
     private val viewModel: MoviesViewModel by viewModels()
-    private lateinit var binding: FragmentMoviesBinding
-
+    private lateinit var viewDataBinding: FragmentMoviesBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding =
+        viewDataBinding =
             FragmentMoviesBinding.inflate(inflater, container, false)
                 .apply {
-                    viewmodel = viewmodel
+                    viewmodel = viewModel
                     lifecycleOwner = this@MoviesFragment.viewLifecycleOwner
                 }
-        return binding.root
-        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_movies, container, false)
+        return viewDataBinding.root
     }
 
     override fun setupViewModelObservers() {
-//        super.setupViewModelObservers()
-        viewModel.snackBarText.observe(viewLifecycleOwner, EventObserver{
-            view?.showSnackBar(it)
-        })
+        viewModel.snackBarText.observe(viewLifecycleOwner, EventObserver { view?.showSnackBar(it) })
         viewModel.goToMovieDetailsEvent.observe(
             viewLifecycleOwner,
-            EventObserver{ movie->
-                navigateToMovieDetails(movie.id, movie.title)
-            }
-        )
-
+            EventObserver { navigateToMovieDetails(it.id, it.title) })
     }
 
     private fun navigateToMovieDetails(movieId: Int, movieTitle: String) {
@@ -55,8 +45,5 @@ class MoviesFragment : BaseFragment(false) {
             movieTitle
         )
         findNavController().navigate(action)
-
     }
-
-
 }
